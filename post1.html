@@ -11,12 +11,14 @@ body {
   color: #333;
 }
 
+/* HEADER */
 .header {
   background: #111;
   color: white;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header a {
@@ -25,6 +27,32 @@ body {
   margin-left: 20px;
 }
 
+/* DROPDOWN */
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #222;
+  padding: 10px;
+  min-width: 180px;
+}
+
+.dropdown a {
+  display: block;
+  color: white;
+  padding: 6px 10px;
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+/* CONTENT */
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -45,6 +73,7 @@ p {
   margin-top: 25px;
 }
 
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
@@ -56,20 +85,25 @@ p {
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
   <div><b>patternbreak.space</b></div>
+
   <div>
     <a href="index.html">Home</a>
+
     <div class="menu">
-  <a href="#">Posts ▼</a>
-  <div class="dropdown">
-    <a href="post1.html">Post 1</a>
-  </div>
-</div>
+      <a href="#">Posts ▼</a>
+      <div class="dropdown">
+        <a href="post1.html">Post 1</a>
+      </div>
+    </div>
+
     <a href="disclaimer.html">Disclaimer</a>
   </div>
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
 <h1>Technology Is Evolving. Thinking Must Lead.</h1>
@@ -97,7 +131,6 @@ Tools today can generate, suggest, and automate. They can respond faster than an
 
 <div class="section">
 <p>Technology demands:</p>
-
 <p>
 Discipline in thinking<br>
 Structure in approach<br>
@@ -120,7 +153,6 @@ That shift defines the difference between use and mastery.
 
 <div class="section">
 <p>Learners must be able to:</p>
-
 <p>
 Filter noise<br>
 Recognise patterns<br>
@@ -160,14 +192,17 @@ It will belong to those who direct it.
 And that begins with how we choose to think.
 </p>
 
-</div>
+<!-- COMMENT FORM -->
 <h3>Post Comment</h3>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2dqhEOiCly7bwl_VWFn85y1Oy_CNSmCE7ai5uewvzn8nWRA/viewform?embedded=true" 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2dqhEOiCly7bwl_VWFn85y1Oy_CNSmCE7ai5uewvzn8nWRA/viewform?embedded=true"
 width="100%" height="650" frameborder="0">
 Loading…
 </iframe>
-  
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
 © 2026 patternbreak.space
 </div>
