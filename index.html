@@ -7,16 +7,18 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
+  background: #f5f5f5;
   color: #333;
 }
 
+/* HEADER */
 .header {
   background: #111;
   color: white;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header a {
@@ -25,55 +27,72 @@ body {
   margin-left: 20px;
 }
 
+/* MAIN LAYOUT */
 .container {
-  max-width: 900px;
-  margin: 40px auto;
+  max-width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
   padding: 0 20px;
 }
 
-h2 {
-  color: #7a1f1f;
-  font-size: 28px;
+/* LEFT CARD */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
 }
 
-p {
-  line-height: 1.7;
-  margin-bottom: 18px;
+.card h2 {
+  margin-top: 0;
 }
 
-.quote {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.card p {
+  line-height: 1.6;
 }
 
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #7a1f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* RIGHT POSTS */
+.posts {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.post-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.post-box {
+  width: 30px;
+  height: 30px;
+  background: #7a1f1f;
+}
+
+.post-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
   color: #777;
-  font-size: 14px;
-}
-  .menu {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background: #222;
-  padding: 10px;
-}
-
-.dropdown a {
-  display: block;
-  color: white;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-.menu:hover .dropdown {
-  display: block;
 }
 </style>
 </head>
@@ -84,37 +103,34 @@ p {
   <div><b>patternbreak.space</b></div>
   <div>
     <a href="index.html">Home</a>
-    <div class="menu">
-  <a href="#">Posts ▼</a>
-  <div class="dropdown">
-    <a href="post1.html">Post 1</a>
-  </div>
-</div>
+    <a href="post1.html">Post</a>
     <a href="disclaimer.html">Disclaimer</a>
   </div>
 </div>
 
 <div class="container">
 
-<h2>About</h2>
+<!-- LEFT -->
+<div class="card">
+  <h2>I write about technology, thinking, and learning.</h2>
 
-<p class="quote">"Good practice travels. This platform ensures that mine does."</p>
+  <p>
+  Practical classroom insights, structured thinking, and meaningful use of technology in education.
+  </p>
 
-<p>
-Twenty-four years in the classroom represent more than experience; they reflect sustained engagement with evolving curricula, advancing technologies, and generations of learners who expect clarity, relevance, and purpose in what they are taught.
-</p>
+  <a href="post1.html" class="button">Read the blog</a>
+</div>
 
-<p>
-My professional work spans IB PYP, Cambridge, and ICSE, with a consistent focus on integrating technology to strengthen thinking, inquiry, and application in meaningful ways.
-</p>
+<!-- RIGHT -->
+<div class="posts">
+  <h3>Posts</h3>
 
-<p>
-This space brings together classroom practice, lesson design, and considered reflection on ICT, AI, and digital learning, shared with educators who approach their craft with intent and rigour.
-</p>
+  <div class="post-item">
+    <div class="post-box"></div>
+    <a href="post1.html">Technology Is Evolving. Thinking Must Lead.</a>
+  </div>
 
-<p>
-At its core, the work is committed to structured, student-centered learning, where technology is not just an addition, but an integral part of how understanding is developed and demonstrated.
-</p>
+</div>
 
 </div>
 
